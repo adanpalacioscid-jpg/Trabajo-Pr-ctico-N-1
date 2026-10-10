@@ -300,7 +300,131 @@ header{
   padding: 0;
 }
 
+/* ESTILOS GENERALES DE LA SECCIÓN */
+.tarjetas-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
+/* ENCABEZADO */
+.tarjetas-titulo {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+}
+
+.tarjetas-titulo h2 {
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.tarjetas-titulo p {
+  font-size: 16px;
+  color: #a1a1a1;
+  line-height: 1.5;
+}
+
+/* CONTENEDOR DE LAS TARJETAS (FLEXBOX EN FILA) */
+.tarjetas-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* CADA TARJETA INDIVIDUAL */
+.tarjeta-item {
+  background-color: #0f0f11; /* Color de fondo oscuro de la tarjeta */
+  border-radius: 20px;
+  border: 1px solid #222226;
+  width: 100%;
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* CONTENEDOR SUPERIOR CON DEGRADADO Y IMAGEN */
+.tarjeta-imagen {
+  height: 240px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Degradados sutiles de fondo para la parte superior de cada tarjeta */
+.card-bg-1 { background: linear-gradient(135deg, #2fd5b9 0%, #157993 100%); }
+.card-bg-2 { background: linear-gradient(135deg, #71b0ff 0%, #005ce6 100%); }
+.card-bg-3 { background: linear-gradient(135deg, #4da3ff 0%, #0033ad 100%); }
+
+.tarjeta-imagen img {
+  max-width: 95%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* CONTENIDO DE TEXTO DENTRO DE LA TARJETA */
+.tarjeta-contenido {
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Hace que el contenido ocupe el espacio disponible para alinear el botón abajo */
+}
+
+.tarjeta-contenido h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.sub-texto {
+  font-size: 14px;
+  color: #a1a1a1;
+  font-style: italic;
+  margin: 0 0 24px 0;
+}
+
+/* LISTAS DE VIÑETAS */
+.card-list {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin: 0 0 32px 0;
+  flex-grow: 1; /* Empuja el botón hacia la parte inferior de manera uniforme */
+}
+
+.card-list li {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #cccccc;
+  margin-bottom: 14px;
+}
+
+/* BOTÓN INFERIOR DE CADA TARJETA */
+.tarjeta-btn {
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: auto; /* Ancla el botón al fondo de la tarjeta */
+}
 
 
 footer{   
