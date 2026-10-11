@@ -14,9 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ==========================================
-   HEADER RESPONSIVE
-   ========================================== */
+
 header {
   display: flex;
   align-items: center;
@@ -112,9 +110,7 @@ header {
   cursor: pointer;
 }
 
-/* ==========================================
-   HERO SECTION RESPONSIVE
-   ========================================== */
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -283,9 +279,7 @@ header {
   color: #333333;
 }
 
-/* ==========================================
-   SECCIÓN DE TARJETAS RESPONSIVE (300px - 2000px)
-   ========================================== */
+
 .tarjetas-section {
   background-color: #000000;
   color: #ffffff;
@@ -320,7 +314,7 @@ header {
   gap: 24px;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: wrap; /* Clave para que bajen de línea en pantallas estrechas */
+  flex-wrap: wrap; 
   width: 100%;
 }
 
@@ -410,9 +404,6 @@ header {
   margin-top: auto;
 }
 
-/* ==========================================
-   FOOTER RESPONSIVE
-   ========================================== */
 footer {
   width: 100%;
   padding: 40px 20px;
@@ -481,9 +472,7 @@ a {
   cursor: pointer;
 }
 
-/* ==========================================
-   MEDIA QUERY PARA PANTALLAS MENORES A 900px (Móviles y Tablets)
-   ========================================== */
+
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
@@ -517,6 +506,6 @@ a {
   }
 
   .menu {
-    display: none; /* Oculta el menú de texto superior en celulares muy pequeños si es necesario, o déjalo fluir */
+    display: none;
   }
 }
