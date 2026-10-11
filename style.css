@@ -336,9 +336,12 @@ header{
 
 .tarjetas-container {
   display: flex;
+  flex-wrap: wrap; 
   gap: 24px;
   justify-content: center;
   align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tarjeta-item {
@@ -346,7 +349,7 @@ header{
   border-radius: 20px;
   border: 1px solid #222226;
   width: 100%;
-  max-width: 390px;
+  max-width: 100%; 
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -498,3 +501,56 @@ a{
     cursor: pointer;
 }
 
+
+@media (max-width: 480px) {
+  .tarjetas-section {
+    padding: 40px 12px; 
+  }
+
+  .tarjetas-titulo h2 {
+    font-size: 28px; 
+  }
+
+  .tarjetas-titulo p {
+    font-size: 14px;
+  }
+
+  .tarjeta-contenido {
+    padding: 20px 16px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .tarjeta-item {
+    
+    max-width: calc(50% - 12px); 
+  }
+
+  .tarjetas-titulo h2 {
+    font-size: 36px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .tarjeta-item {
+  
+    max-width: 390px;
+  }
+
+  .tarjetas-titulo h2 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tarjetas-section {
+    
+    max-width: 1500px; 
+  }
+
+  .tarjeta-item {
+    max-width: 440px; 
+  }
+}
